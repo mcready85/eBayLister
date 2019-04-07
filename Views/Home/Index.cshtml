@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "ListEasy - A multi-channel ecommerce listing application";
+}
+
+<div class="jumbotron">
+    <h1>ListEasy</h1>
+    <p class="lead">An easy to use tool to quickly add products to an active eBay account.</p>
+    <p>@Html.ActionLink("Learn More", "About", "Home", null, new { @class = "btn btn-primary btn-lg" })</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Add a New Listing</h2>
+        <p>Provide basic information on your product and we will populate your eBay listing with images, descriptions and product info.</p>
+        <p>@Html.ActionLink("Create New", "Create", "EbayItems", null, new { @class = "btn btn-default" })</p>
+    </div>
+    <div class="col-md-4">
+        <h2>View Listings</h2>
+        <p>Manage all your active listings and drafts. Easily relist, update or end listings from here.</p>
+        <p>@Html.ActionLink("View All", "Index", "EbayItems", null, new { @class = "btn btn-default" })</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Manage Account</h2>
+        <p>Manage payment options, return policies, shipping policies and more.</p>
+        <p><em>Coming soon...</em></p>
+    </div>
+</div>
